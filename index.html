@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Arsenal: Premier League Champions 2025-26</title>
+<title>Time Since Arsenal Last Won the Premier League</title>
 <style>
   :root {
     --arsenal-red: #EF0107;
@@ -117,30 +117,14 @@
     font-size: 0.85rem;
     opacity: 0.6;
   }
-  .champions-banner {
-    display: inline-block;
-    background: linear-gradient(135deg, var(--arsenal-gold) 0%, #f5c542 100%);
-    color: #000;
-    font-weight: 900;
-    font-size: clamp(1rem, 2.5vw, 1.4rem);
-    padding: 0.6rem 1.4rem;
-    border-radius: 999px;
-    letter-spacing: 3px;
-    margin-bottom: 1rem;
-    box-shadow: 0 4px 20px rgba(219, 158, 0, 0.5);
-    animation: pulse 2s ease-in-out infinite;
-  }
-  @keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-  }
+
 </style>
 </head>
 <body>
   <div class="card">
-    <div class="champions-banner">CHAMPIONS 2025-26 &#127942;</div>
-    <h1>Since Arsenal last won a trophy</h1>
-    <p class="subtitle">Premier League Champions &mdash; 20 May 2026</p>
+    <div class="trophy">&#127942;</div>
+    <h1>Since Arsenal last won the league</h1>
+    <p class="subtitle">2003-04 Season &mdash; The Invincibles &mdash; Title sealed 25 April 2004</p>
 
     <div class="counter">
       <div class="unit"><div class="value" id="years">0</div><div class="label">Years</div></div>
@@ -162,7 +146,7 @@
   </div>
 
 <script>
-  const lastTrophy = new Date("2026-05-20T22:00:00+01:00");
+  const lastTrophy = new Date("2004-04-25T17:00:00+01:00");
 
   function tick() {
     const now = new Date();
